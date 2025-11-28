@@ -14,8 +14,16 @@
  * limitations under the License.
  */
 
-plugins {
-	id "base"
+ plugins {
+  id "org.sonarqube" version "7.0.1.6134"
+  id "base"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "olpto_spring-boot_b58dda19-6e98-4eca-91a5-0f6b5abca407"
+    property "sonar.projectName", "spring-boot"
+  }
 }
 
 description = "Spring Boot Build"
